@@ -4,7 +4,7 @@
 
 from pyrogram import Client, __version__
 
-from . import API_HASH, APP_ID, LOGGER, \
+from . import API_HASH, API_ID, LOGGER, \
     USER_SESSION
 
 
@@ -26,3 +26,4 @@ class User(Client):
     async def stop(self, *args):
         await super().stop()
         self.LOGGER(__name__).info("Bot stopped. Bye.")
+
