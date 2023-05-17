@@ -1365,7 +1365,7 @@ async def cb_accuracy(bot, update: CallbackQuery):
         return
 
     action, val, chat_id, curr_val = re.findall(r"set\((.+)\)", query_data)[0].split("|", 3)
-   value = True if value=="True" else False
+    value = True if value=="True" else False
     
     if value:
         buttons= [
