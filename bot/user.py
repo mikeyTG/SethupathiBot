@@ -13,7 +13,7 @@ class User(Client):
         super().__init__(
             USER_SESSION,
             api_hash=API_HASH,
-            api_id=APP_ID,
+            api_id=API_ID,
             workers=4
         )
         self.LOGGER = LOGGER
