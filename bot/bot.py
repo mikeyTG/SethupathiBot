@@ -1,6 +1,6 @@
 from pyrogram import Client, enums, __version__
 
-from . import API_HASH, APP_ID, LOGGER, BOT_TOKEN 
+from . import API_HASH, API_ID, LOGGER, BOT_TOKEN 
 
 from bot.plugins.webcode import bot_run
 from os import environ
@@ -18,7 +18,7 @@ class Bot(Client):
         super().__init__(
             "bot",
             api_hash=API_HASH,
-            app_id=APP_ID,
+            api_id=API_ID,
             plugins={
                 "root": "bot/plugins"
             },
