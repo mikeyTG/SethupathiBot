@@ -15,7 +15,7 @@ class Singleton(type):
 class Database(metaclass=Singleton):
 
     def __init__(self):
-        self._client = motor.motor_asyncio.AsyncIOMotorClient(DB_URI)
+        self._client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
         self.db = self._client["Adv_Auto_Filter"]
         self.col = self.db["Main"]
         self.acol = self.db["Active_Chats"]
